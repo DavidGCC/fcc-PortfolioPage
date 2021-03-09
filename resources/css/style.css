@@ -1,9 +1,9 @@
 :root {
-    --navbar-background-lighter: #AC124A;
+    --navbar-background-lighter: #ac124a;
     --welcome-section-background: #022e39;
     --welcome-header: #fff;
     --welcome-subheader: #d94b58;
-    --projects-background: #044B55;
+    --projects-background: #044b55;
 }
 
 * {
@@ -30,6 +30,7 @@ body {
     direction: rtl;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 #navbarContainer a {
@@ -87,12 +88,58 @@ body {
 .project {
     width: 30rem;
     height: 30rem;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
 }
 
-.project img {
-    height: calc(100% - 5rem);
+.project-image-container {
     width: 100%;
+    height: calc(100% - 3rem);
+}
+
+.projectImage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    transition: 0.3s ease;
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    padding: 2rem 0;
+}
+
+.overlay dt {
+    font-size: 1.5rem;
+}
+
+.overlay dd {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-image-container:hover .projectImage {
+    opacity: 0.3;
+}
+
+.project-image-container:hover .overlay {
+    opacity: 1;
 }
 
 .project-title {
