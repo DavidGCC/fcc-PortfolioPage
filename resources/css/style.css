@@ -95,14 +95,14 @@ body {
     width: 100%;
 }
 
-.projectHeader {
+.project-title {
     background-color: var(--welcome-section-background);
     height: 3rem;
     color: #fff;
     display: flex;
 }
 
-.projectHeader h4 {
+.project-title h4 {
     margin: auto;
     font-size: 2rem;
 }
