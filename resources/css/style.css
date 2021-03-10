@@ -4,6 +4,7 @@
     --welcome-header: #fff;
     --welcome-subheader: #d94b58;
     --projects-background: #044b55;
+    --contact-section-bg: #32435f
 }
 
 * {
@@ -200,4 +201,42 @@ body {
 
 #more-projects-link:hover {
     background: rgba(172, 18, 74, 0.5);
+}
+
+#contact-section {
+    width: 100%;
+    height: 100%;
+    background-color: var(--contact-section-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+}
+
+#contact-section h1 {
+    font-size: 4rem;
+}
+
+#contact-section h3 {
+    font-size: 1.5rem;
+}
+
+#contact-list {
+    width: 30%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+#contact-list a {
+    transition: .3s ease;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact-list a:hover {
+    transform: translateY(20%);
 }
