@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-#navbarContainer {
+#navbar {
     background-color: var(--navbar-background-lighter);
     font-family: "Lato", sans-serif;
     direction: rtl;
@@ -33,7 +33,7 @@ body {
     z-index: 1;
 }
 
-#navbarContainer a {
+#navbar a {
     color: #fff;
     font-weight: 300;
     font-size: 1.4rem;
@@ -87,7 +87,7 @@ body {
     justify-content: space-around;
 }
 
-.project {
+.project-tile {
     width: 30rem;
     height: 30rem;
     margin: 1rem 1rem;
@@ -187,11 +187,11 @@ body {
     grid-area: siteLink;
 }
 
-.project:hover .project-link {
+.project-tile:hover .project-link {
     visibility: visible;
 }
 
-#more-projects-link {
+#profile-link {
     width: auto;
     background-color: var(--navbar-background-lighter);
     border-radius: 0.7rem;
@@ -200,7 +200,7 @@ body {
     transition: 0.3s ease;
 }
 
-#more-projects-link:hover {
+#profile-link:hover {
     background: rgba(172, 18, 74, 0.5);
 }
 
@@ -243,7 +243,7 @@ body {
 }
 
 @media only screen and (max-width: 1315px) {
-    .project {
+    .project-tile {
         margin: auto;
         margin-bottom: 1rem;
     }
@@ -256,7 +256,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-    .project {
+    .project-tile {
         width: 20rem;
     }
 
