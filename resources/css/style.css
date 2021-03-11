@@ -172,6 +172,7 @@ body {
     mix-blend-mode: lighten;
     visibility: hidden;
     transition: .3s ease-in-out;
+    color: #fff;
 }
 
 .hidden {
